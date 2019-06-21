@@ -1,0 +1,71 @@
+.page {
+  display: flex;
+  flex-direction: column;
+}
+.search {
+  background-color: #FFDC00;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 19rpx 30rpx;
+  font-size: 24rpx;
+}
+.search .input {
+  width: 75%;
+  border-radius: 30rpx;
+  text-indent: 24rpx;
+  background: #fff;
+}
+.swiper {
+  height: 320rpx;
+}
+.swiper .slide-image{
+  width: 100%;
+}
+.nav {
+  
+}
+.nav .row{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #E4E7F0;
+}
+.nav .item {
+  display: flex;
+  flex-basis: 25%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24rpx;
+  box-sizing: border-box;
+  border-right: 1px solid #E4E7F0;
+}
+.nav .item:last-child{
+  border-right: none;
+}
+.nav .item .image{
+  width: 88rpx;
+  height: 88rpx;
+}
+.nav .item .title{
+  padding-top: 19rpx;
+  font-size: 24rpx;
+  text-align: center;
+  color: #666;
+}
+.sport {
+  padding: 14rpx 38rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sport .item {
+  display: flex;
+  flex-basis: 25%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.sport .item .image{
+  width: 36rpx;
+  height: 36rpx;
+}

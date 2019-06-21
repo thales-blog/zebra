@@ -1,0 +1,31 @@
+<view class="page">
+  <view class="search">
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" >
+      <view class="picker">
+        {{region[0]}}，{{region[1]}}，{{region[2]}} ⌄
+      </view>
+    </picker>
+    <input class="input" placeholder="请输入关键字查找更多优惠" />
+  </view>
+  <swiper class="swiper" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" duration="{{1000}}">
+    <swiper-item wx:for="{{swiper}}" wx:key="{{index}}">
+      <navigator url="{{item.href}}">
+        <image src="{{item.img}}" class="slide-image" />
+      </navigator>
+    </swiper-item>
+  </swiper>
+  <view class="nav">
+    <view class="row" wx:for="{{nav}}" wx:key="{{index}}" wx:for-item="row">
+      <navigator wx:for="{{row}}" wx:key="{{index}}" class="item" url="{{item.href}}">
+        <image class="image" lazy-load="{{true}}" src="{{item.img}}" />
+        <view class="title">{{item.title}}</view>
+      </navigator>
+    </view>
+  </view>
+  <view class="sport">
+    <navigator wx:for="{{sport}}" wx:key="{{index}}" class="item" url="{{item.href}}">
+      <image class="image" lazy-load="{{true}}" src="{{item.img}}" />
+      <view class="title">{{item.title}}</view>
+    </navigator>
+  </view>
+</view>
